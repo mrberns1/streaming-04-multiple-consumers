@@ -1,3 +1,4 @@
+# Missy Bernskoetter 2/28/2023
 # streaming-04-multiple-consumers
 
 > Use RabbitMQ to distribute tasks to multiple workers
@@ -34,6 +35,7 @@ Explore the RabbitMQ website.
 1. Run listening_worker.py
 
 Will it terminate on its own? How do you know? 
+No it will not, it is continuous and requires control+c to exit.
 
 ## Ready for Work
 
@@ -45,9 +47,10 @@ Will it terminate on its own? How do you know?
 
 Follow the tutorial. 
 Add multiple tasks (e.g. First message, Second message, etc.)
-How are tasks distributed? 
+How are tasks distributed? Depending on which one you ran the listening worker python file on first.
 Monitor the windows with at least two workers. 
 Which worker gets which tasks?
+Each one gets a task based on the distribution. While the first worker got the first task, the second worker got the second. This looks different on mine because I ran v1 for the first task and v2 for the sencond-fifth task. So for mine it looks like the first worker got the second and fourth task and the second worker got the third and fifth task.
 
 
 ## Reference
@@ -58,3 +61,5 @@ Which worker gets which tasks?
 ## Screenshot
 
 See a running example with at least 3 concurrent process windows here:
+[Concurrent terminal](Concurrent_Terminals.JPG)
+[Queues](Queues.JPG)
