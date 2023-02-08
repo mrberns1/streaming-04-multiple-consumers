@@ -35,7 +35,7 @@ Explore the RabbitMQ website.
 1. Run listening_worker.py
 
 Will it terminate on its own? How do you know? 
-No it will not, it is continuous and requires control+c to exit.
+No it will not, it is continuous and requires control+c to exit. Also, the prefetch_count=1 so it will continue
 
 ## Ready for Work
 
@@ -61,5 +61,7 @@ Each one gets a task based on the distribution. While the first worker got the f
 ## Screenshot
 
 See a running example with at least 3 concurrent process windows here:
+
 [Concurrent terminal](Concurrent_Terminals.JPG)
+
 [Queues](Queues.JPG)
