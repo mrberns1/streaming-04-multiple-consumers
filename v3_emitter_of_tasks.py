@@ -63,7 +63,7 @@ for row in reader:
    sock.sendto(MESSAGE, address_tuple)
 
    # sleep for a few seconds
-   time.sleep(1)
+   time.sleep(3)
 try:
     # create a blocking connection to the RabbitMQ server
     conn = pika.BlockingConnection(pika.ConnectionParameters(host))
@@ -99,6 +99,6 @@ if __name__ == "__main__":
     # if no arguments are provided, use the default message
     # use the join method to convert the list of arguments into a string
     # join by the space character inside the quotes
-    message = " ".join(sys.argv[1:]) or "{message}"
+    message = " ".join(sys.argv[0:]) or "{message}"
     # send the message to the queue
     send_message("localhost","task_queue4",message)

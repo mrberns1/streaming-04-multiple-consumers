@@ -34,13 +34,13 @@ def main(host_name: str = "localhost", queue_name: str = "task_queue4"):
 try:
     # try this code, if it works, keep going
     # create a blocking connection to the RabbitMQ server
-    connection = pika.BlockingConnection(pika.ConnectionParameters(host="host_name"))
+    connection = pika.BlockingConnection(pika.ConnectionParameters(host="localhost"))
 
 # except, if there's an error, do this
 except Exception as e:
     print()
     print("ERROR: connection to RabbitMQ server failed.")
-    print(f"Verify the server is running on host= {'host_name'}.")
+    print(f"Verify the server is running on host= {'localhost'}.")
     print(f"The error says: {e}")
     print()
     sys.exit(1)
