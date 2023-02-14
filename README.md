@@ -68,3 +68,4 @@ See a running example with at least 3 concurrent process windows here:
 
 These images are from the original v2 run
 
+[v3_terminals](v3_terminals.JPG)
