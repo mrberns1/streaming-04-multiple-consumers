@@ -65,3 +65,6 @@ See a running example with at least 3 concurrent process windows here:
 [Concurrent terminal](Concurrent_Terminals.JPG)
 
 [Queues](Queues.JPG)
+
+These images are from the original v2 run
+
